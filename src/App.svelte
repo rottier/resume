@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Section from "./lib/Section.svelte";
 </script>
 
 <main>
