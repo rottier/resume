@@ -5,15 +5,10 @@ export default {
    '../stories/**/*.stories.mdx',
    '../src/**/*.stories.@(js|jsx|ts|tsx|svelte)',
  ],
- addons: ['@storybook/addon-essentials', '@storybook/addon-designs'],
+ addons: ['@storybook/addon-essentials'],
  framework: '@storybook/svelte-vite',
  async viteFinal(config) {
-   // Merge custom configuration into the default config
    return mergeConfig(config, {
-     // Add storybook-specific dependencies to pre-optimization
-     optimizeDeps: {
-       include: ['@storybook/addon-designs'],
-     },
    });
  },
 };
