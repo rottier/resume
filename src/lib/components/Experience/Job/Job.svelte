@@ -30,7 +30,7 @@
     <div class="flex flex-column gap-2 items-center">
         <div class="w-full">
             <div class="flex flex-column gap-2 items-center">
-                <h3 class="font-semibold text-l w-fit">
+                <h3 class="font-bold text-l w-fit">
                     {#if companyWebsite}
                         <a
                             class="hover:text-blue-300"
@@ -59,8 +59,12 @@
 
     </div>
     <ul class="list-none overflow-hidden wrapped-list">
-        {#each roles as role}
-            <li class="text-sm font-mono inline-block">{role}</li>
+        {#each roles as role, index}
+            {#if index === roles.length - 1}
+            <li class="text-xs inline-block font-mono before:font-normal before:opacity-60 before:text-xs">{role}</li>
+            {:else}
+            <li class="text-xs inline-block font-mono opacity-60">{role}</li>
+            {/if}
         {/each}
     </ul>
     <p class="text-sm text-ellipsis">{jobDescription}</p>
