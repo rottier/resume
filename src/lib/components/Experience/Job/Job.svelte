@@ -28,7 +28,7 @@
 
 <section class="overflow-hidden border p-3 rounded space-y-1">
     <div class="flex flex-column gap-2 items-center">
-        <div>
+        <div class="w-full">
             <div class="flex flex-column gap-2 items-center">
                 <h3 class="font-semibold text-l w-fit">
                     {#if companyWebsite}
@@ -44,18 +44,19 @@
                 <span class="badge badge-accent badge-outline text-nowrap"
                     >{jobLocation}</span
                 >
+                <div class="text-sm tabular-nums text-gray-500 ml-auto">
+                    <time datetime={yStart}>{yStart}</time> -
+                    <time datetime={yEnd || String(new Date().getFullYear())}
+                        >{yEnd || "now"}</time
+                    >
+                </div>
             </div>
             {#if companyLocation}
                 <h2 class="text-sm">{companyLocation}</h2>
             {/if}
         </div>
 
-        <div class="text-sm tabular-nums text-gray-500 ml-auto">
-            <time datetime={yStart}>{yStart}</time> -
-            <time datetime={yEnd || String(new Date().getFullYear())}
-                >{yEnd || "now"}</time
-            >
-        </div>
+
     </div>
     <ul class="list-none overflow-hidden wrapped-list">
         {#each roles as role}
