@@ -1,6 +1,7 @@
 <script lang="ts">
     import { JobLocation } from ".";
     import { clamp } from "lodash";
+    import { fly } from 'svelte/transition';
 
     export let companyName = "Name of the Company";
     export let companyLocation = "Location of the Company";
@@ -60,11 +61,11 @@
     </div>
     <ul class="list-none overflow-hidden wrapped-list">
         {#each roles as role, index}
-            {#if index === roles.length - 1}
-            <li class="text-xs inline-block font-mono before:font-normal before:opacity-60 before:text-xs">{role}</li>
-            {:else}
-            <li class="text-xs inline-block font-mono opacity-60">{role}</li>
-            {/if}
+        <li
+        class="text-xs inline-block font-mono {index !== roles.length - 1 ? 'opacity-60' : ''}"
+        in:fly|global={{ x: -100, opacity: 0, duration: 500, delay: index * 100 }}>
+        {role}
+      </li>
         {/each}
     </ul>
     <p class="text-sm text-ellipsis">{jobDescription}</p>
