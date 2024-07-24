@@ -1,139 +1,160 @@
 <script lang="ts">
+    import Education from "./lib/components/Experience/Education/Education.svelte";
+    import ExperienceSection from "./lib/components/Experience/ExperienceSection.svelte";
+    import { JobLocation } from "./lib/components/Experience/Job";
+    import Job from "./lib/components/Experience/Job/Job.svelte";
 </script>
 
 <main>
-      <div class="max-w-3xl mx-auto p-6 bg-black shadow-lg rounded-lg">
-          <header class="mb-6">
-              <h1 class="text-3xl font-bold">Marino Rottier</h1>
-              <p class="text-xl">Software Engineer @ EVS Broadcast Equipment</p>
-              <p>The Randstad, Netherlands</p>
-          </header>
-  
-          <section class="mb-6">
-              <h2 class="text-2xl font-semibold mb-2 sticky top-0 -ml-7 print:ml-0">Contact</h2>
-              <p>Email: <a href="mailto:marino@rottier.nl" class="text-blue-600">marino@rottier.nl</a></p>
-              <p>LinkedIn: <a href="https://www.linkedin.com/in/marinorottier" class="text-blue-600">linkedin.com/in/marinorottier</a></p>
-          </section>
-  
-          <section class="mb-6">
-              <h2 class="text-2xl font-semibold mb-2 sticky top-0 -ml-7 print:ml-0">Top Skills</h2>
-              <ul class="list-disc list-inside">
-                  <li>React.js</li>
-                  <li>C++</li>
-                  <li>TypeScript</li>
-              </ul>
-          </section>
-  
-          <section class="mb-6">
-              <h2 class="text-2xl font-semibold mb-2  sticky top-0 -ml-7 print:ml-0">Languages</h2>
-              <ul class="list-disc list-inside">
-                  <li>Dutch (Native or Bilingual)</li>
-                  <li>English (Professional Working)</li>
-              </ul>
-          </section>
-  
-          <section class="mb-6">
-              <h2 class="text-2xl font-semibold mb-2  sticky top-0 -ml-7 print:ml-0">Summary</h2>
-              <p>Transversal software developer, experienced in building desktop/web applications front-to-back and passionate about modern UI and CI. Also an experienced drummer, just ask my neighbors!</p>
-          </section>
-  
-          <section class="mb-6">
-              <h2 class="text-2xl font-semibold mb-2 sticky top-0 -ml-7 print:ml-0">Experience</h2>
-  
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">EVS Broadcast Equipment</h3>
-                  <p class="italic">3 years 2 months</p>
-                  <h4 class="text-lg font-semibold">Software Engineer</h4>
-                  <p>September 2022 - Present (1 year 11 months)</p>
-                  <p>Wokingham, England, United Kingdom</p>
-                  <p>Developing on Cerebrum, EVS' broadcast control and monitoring system. A healthy combination of frontend (React/TypeScript) and backend (C++) development, with a primary focus on web-based control (a WebSocket-driven React SPA) of the server application, and extending the C++ based UI/workflow building application. Furthermore, I've helped the team by prototyping applications using Figma and actively worked on the CI and CD pipelines of the products and common libraries. As a member of an interdepartmental UI team I helped improving and generalizing our front end practices and tooling.</p>
-              </div>
-  
-              <div class="mb-4">
-                  <h4 class="text-lg font-semibold">Application Engineer</h4>
-                  <p>June 2021 - August 2022 (1 year 3 months)</p>
-                  <p>Gilze, Noord-Brabant, Nederland</p>
-                  <p>Creating control and monitoring applications for critical broadcasting operations of major broadcasters (such as BBC, ITN and ORF), setting up the team's development environment (version control and deployment workflows/scripts, code documentation generator) and creating a package/module framework for the proprietary scripting language.</p>
-              </div>
-  
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">NEP The Netherlands</h3>
-                  <p class="italic">2 years 7 months</p>
-                  <h4 class="text-lg font-semibold">Software Engineer</h4>
-                  <p>August 2020 - June 2021 (11 months)</p>
-                  <p>Hilversum, Noord-Holland, Nederland</p>
-                  <p>Developed on a C++/Lua based broadcast control system for virtual production and realtime graphics, used for large scale television productions such as the Eurovision Song Contest, Extreme E and Sky News Arabia. Implementing third party protocols (HTTP, WebSockets, 'raw' TCP and UDP based) and creating a GUI framework that is completely configurable from Lua, aimed for technical artists and operators to quickly compose workspaces and playlists to control time-critical broadcasting operations.</p>
-              </div>
-  
-              <div class="mb-4">
-                  <h4 class="text-lg font-semibold">Technical Artist</h4>
-                  <p>December 2018 - August 2020 (1 year 9 months)</p>
-                  <p>Programming real-time graphics pipelines and applications for (live) TV broadcasting and webcasting, specialized in virtual production. Shader programming, UI scripting, building show logic and creating an internal package manager for reusing 3D assets and code. Built a coalition builder for the Dutch elections, contributed to several high profile productions such as the NFL Super Bowl coverage of Nordic Entertainment Group and the award ceremony of the Gouden Televizier-Ring.</p>
-              </div>
-  
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">EMG NL</h3>
-                  <p class="italic">2 years 6 months</p>
-                  <h4 class="text-lg font-semibold">Technical Artist</h4>
-                  <p>July 2016 - December 2018 (2 years 6 months)</p>
-                  <p>Hilversum, North Holland Province, Netherlands</p>
-                  <p>Programming real-time graphics pipelines and applications for (live) TV broadcasting, specialized in virtual production. Developed data-driven augmented reality graphics for several Dutch elections and for the 2017 FIFA World Cup coverage on Mediaset (Italy).</p>
-              </div>
-  
-              <div class="mb-4">
-                  <h4 class="text-lg font-semibold">Graphics Operator</h4>
-                  <p>July 2016 - December 2018 (2 years 6 months)</p>
-                  <p>Hilversum, Noord-Holland, Nederland</p>
-                  <p>Creating, scripting and operating realtime graphics for (live) TV broadcasting productions, from Dutch daily talkshows to international outside broadcasting productions (and everything in between).</p>
-              </div>
-  
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">Universiteit Utrecht</h3>
-                  <h4 class="text-lg font-semibold">Media Developer</h4>
-                  <p>January 2015 - July 2016 (1 year 7 months)</p>
-                  <p>Utrecht</p>
-                  <p>E-learning (platform/web) development, media management and moderation for the virtual learning environment of Elevate Health, an in-house startup of the Utrecht University that develops an online academy for international health professionals.</p>
-              </div>
-  
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">OOSEOO Internetmarketing</h3>
-                  <h4 class="text-lg font-semibold">Media Developer</h4>
-                  <p>January 2013 - December 2014 (2 years)</p>
-                  <p>Amersfoort</p>
-                  <p>Audiovisual media development and search engine optimization for an internet marketing agency.</p>
-              </div>
-  
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">De Telegraaf</h3>
-                  <h4 class="text-lg font-semibold">Technical Producer</h4>
-                  <p>December 2012 - June 2013 (7 months)</p>
-                  <p>Amsterdam</p>
-                  <p>Planning, control and technical operations for daily news, entertainment, sports and financial video productions on the online television platform of a newspaper.</p>
-              </div>
-  
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">Uitgeverij Unieboek | Het Spectrum bv</h3>
-                  <h4 class="text-lg font-semibold">Online Marketeer</h4>
-                  <p>December 2011 - June 2012 (7 months)</p>
-                  <p>Houten</p>
-                  <p>Marketing and communications for a book publisher, including social media marketing.</p>
-              </div>
-          </section>
-  
-          <section class="mb-6">
-              <h2 class="text-2xl font-semibold mb-2 sticky top-0 -ml-7 print:ml-0">Education</h2>
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">Hogeschool van Utrecht</h3>
-                  <p>Bachelor's degree, Journalism (2013 - 2014)</p>
-              </div>
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">Grafisch Lyceum Utrecht</h3>
-                  <p>MBO 4 (sprint), Media Management (2010 - 2013)</p>
-              </div>
-              <div class="mb-4">
-                  <h3 class="text-xl font-semibold">'t Atrium</h3>
-                  <p>MAVO, Economics (2005 - 2009)</p>
-              </div>
-          </section>
-      </div>   
+    <div class="bg-white flex items-center justify-center">
+        <div class="max-w-prose space-y-8 m-16">
+            <ExperienceSection sectionName="Who am I?">
+                <div class="flex flex-row">
+                    <p class="text-slate-500 px-3 text-sm">
+                        My name is Marino Rottier, a wide-oriented software
+                        developer. I'm experienced in building desktop/web
+                        applications front-to-back and passionate about modern
+                        UI and CI. I'm also an experienced drummer, just ask my
+                        neighbors!
+                    </p>
+                    <div class="avatar">
+                        <div class="w-24 rounded">
+                            <img
+                                alt="Photo of Marino Rottier"
+                                src="marino.jpeg"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </ExperienceSection>
+            <ExperienceSection sectionName="Experience">
+                <Job
+                    companyName="EVS Broadcast Equipment"
+                    companyWebsite="http://www.evs.com"
+                    companyLocation="Wokingham, England, United Kingdom"
+                    jobLocation={JobLocation.Remote}
+                    roles={["Application Engineer", "Software Engineer"]}
+                    yearStart={2021}
+                    yearEnd={0}
+                    jobDescription={"Starting off as an application engineer, I developed control and monitoring applications for major broadcasters like BBC, ITN, and ORF. This involved setting up the development environment, including version control, deployment workflows, and code documentation, as well as creating a package/module framework for the proprietary scripting language. Transitioning to a software engineer role, I worked on Cerebrum, a broadcast control and monitoring system, focusing on web-based control using React and TypeScript and extending the C++ based UI. Additionally, I prototyped applications with Figma, worked on CI/CD pipelines, and, as part of an interdepartmental UI team, improved and standardized our front-end practices and tools."}
+                    techStack={[
+                        "C++",
+                        "React.js",
+                        "TypeScript",
+                        "MFC",
+                        "CI",
+                        "Node.js",
+                        "SASS",
+                        "WebSocket",
+                        "REST APIs",
+                        "Cypress",
+                        "Git",
+                        "Jest",
+                        "Webpack",
+                        "Lerna",
+                        "Figma",
+                        "Google Test",
+                        "Artifactory",
+                        "TeamCity",
+                    ]}
+                />
+                <Job
+                    companyName="NEP The Netherlands"
+                    companyWebsite="http://www.nepworldwide.nl"
+                    companyLocation="Hilversum, The Netherlands"
+                    jobLocation={JobLocation.Hybrid}
+                    roles={["Technical Artist", "Software Engineer"]}
+                    yearStart={2018}
+                    yearEnd={2021}
+                    jobDescription={"In my role as a software engineer, I worked on a C++/Lua-based broadcast control system for virtual production and real-time graphics, used in large-scale TV productions like the Eurovision Song Contest, Extreme E, and Sky News Arabia. This involved implementing third-party protocols (HTTP, WebSockets, raw TCP, and UDP) and creating a GUI framework configurable from Lua, enabling technical artists and operators to quickly compose workspaces and playlists for time-critical broadcasting operations."}
+                    techStack={[
+                        "C++",
+                        "Lua",
+                        "Unreal Engine",
+                        "Python",
+                        "C#",
+                        "Rust",
+                        "Network Protocols",
+                        "WebSocket",
+                        "CI",
+                        "Git",
+                    ]}
+                />
+                <Job
+                    companyName="EMG NL"
+                    companyWebsite="http://www.nl.emglive.com"
+                    companyLocation="Hilversum, The Netherlands"
+                    jobLocation={JobLocation.OnSite}
+                    roles={["Graphics Operator", "Technical Artist"]}
+                    yearStart={2016}
+                    yearEnd={2018}
+                    jobDescription={"My broadcasting career began as a graphics operator, where I created, scripted, and operated real-time graphics for live TV productions, from Dutch daily talk shows to international broadcasts. To enhance the company's augmented reality offerings, I transitioned to a technical artist, self-teaching gaming technology principles. In this role, I programmed real-time graphics pipelines and applications for live TV, specializing in virtual production. I developed data-driven augmented reality graphics for Dutch elections and the 2017 FIFA World Cup coverage on Mediaset in Italy."}
+                    techStack={[
+                        "Visual Basic",
+                        "Unreal Engine",
+                        "Photoshop",
+                        "XPression",
+                    ]}
+                />
+                <Job
+                    companyName="Utrecht University"
+                    companyWebsite="http://www.elevatehealth.eu"
+                    companyLocation="Utrecht, The Netherlands"
+                    jobLocation={JobLocation.OnSite}
+                    roles={["Media Developer"]}
+                    yearStart={2015}
+                    yearEnd={2016}
+                    jobDescription={"E-learning (platform/web) development, media management and moderation for the virtual learning environment of Elevate Health, an in-house startup of the Utrecht University that develops an online academy for international health professionals."}
+                    techStack={[
+                        "HTML5",
+                        "CSS",
+                        "Moodle",
+                        "Articulate Storyline",
+                        "Adobe Premiere",
+                    ]}
+                />
+                <Job
+                    companyName="OOSEOO Internetmarketing"
+                    companyWebsite="http://www.ooseoo.com"
+                    companyLocation="Amersfoort, The Netherlands"
+                    jobLocation={JobLocation.OnSite}
+                    roles={["Media Developer"]}
+                    yearStart={2013}
+                    yearEnd={2014}
+                    jobDescription={"Audiovisual media development and search engine optimization for an internet marketing agency."}
+                    techStack={[
+                        "Google AdWords",
+                        "Google Analytics",
+                        "After Effects",
+                    ]}
+                />
+            </ExperienceSection>
+            <ExperienceSection sectionName="Education">
+                <Education
+                    schoolName="Utrecht University of Applied Sciences"
+                    schoolLocation="Utrecht, The Netherlands"
+                    degree="Journalism"
+                    degreeDescription="Specialized in television. Member of the Board of Appeals and the Dispute Committee. Not finished."
+                    yearStart={2013}
+                    yearEnd={2014}
+                />
+                <Education
+                    schoolName="Grafisch Lyceum Utrecht"
+                    schoolLocation="Utrecht, The Netherlands"
+                    degree="Media Management"
+                    degreeDescription="Followed the media intermediary specialization, accelerated course. Interned as an online marketeer at a book publisher and a technical producer for the online TV channel of a Dutch national newspaper."
+                    yearStart={2010}
+                    yearEnd={2013}
+                />
+                <Education
+                    schoolName="'t Atrium"
+                    schoolLocation="Amersfoort, The Netherlands"
+                    degree="MAVO"
+                    degreeDescription="Economics and sports study program."
+                    yearStart={2005}
+                    yearEnd={2009}
+                />
+            </ExperienceSection>
+        </div>
+    </div>
 </main>

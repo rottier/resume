@@ -1,10 +1,11 @@
 <script lang="ts">
     import { JobLocation } from ".";
-    import { clamp } from "lodash";
-    import { fly } from 'svelte/transition';
+    import { fly } from "svelte/transition";
+    import { inview } from "svelte-inview";
+    import { toValidYear } from "../../../helpers";
 
     export let companyName = "Name of the Company";
-    export let companyLocation = "Location of the Company";
+    export let companyLocation = "Location of the Company, Country";
     export let companyWebsite = "";
     export let roles: string[] = [
         "Role Name 1",
@@ -12,29 +13,43 @@
         "Role Name 3",
         "Role Name 4",
     ];
+    export let techStack: string[] = [
+        "Svelte",
+        "Tailwind",
+        "Svelte",
+        "Tailwind",
+        "Svelte",
+        "Tailwind",
+        "Svelte",
+        "Tailwind",
+        "Svelte",
+        "Tailwind",
+    ];
     export let jobDescription: string =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan ut est eu vestibulum. Donec eget odio sagittis, lacinia ligula ac, congue purus. Etiam eu mattis mi. Sed eget vestibulum quam. Etiam dictum blandit quam, rutrum varius ante. Integer egestas fermentum varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ex ante, consectetur eu justo in, finibus gravida augue. Maecenas sit amet nunc quam. Fusce vel volutpat nisi, sit amet finibus quam. Nunc ac felis sapien. Maecenas ut purus dapibus, volutpat quam nec, tempor massa. Vestibulum consectetur nisi vitae sodales sollicitudin.";
     export let jobLocation: JobLocation = JobLocation.OnSite;
     export let yearStart = 2020;
     export let yearEnd = 0;
-    const toValidYear = (year: number): string =>
-        String(clamp(Math.round(year), 1901, new Date().getFullYear()));
 
     let yStart: string, yEnd: string;
     $: {
         yStart = toValidYear(yearStart);
         yEnd = yearEnd ? toValidYear(yearEnd) : "";
     }
+
+    let isRolesInView = false;
 </script>
 
-<section class="overflow-hidden border p-3 rounded space-y-1">
+<section
+    class="break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 p-3 rounded space-y-1"
+>
     <div class="flex flex-column gap-2 items-center">
         <div class="w-full">
             <div class="flex flex-column gap-2 items-center">
-                <h3 class="font-bold text-l w-fit">
+                <h3 class="font-bold text-l w-fit text-slate-700">
                     {#if companyWebsite}
                         <a
-                            class="hover:text-blue-300"
+                            class="hover:text-slate-600"
                             href={companyWebsite}
                             target="_blank">{companyName}</a
                         >
@@ -42,7 +57,7 @@
                         {companyName}
                     {/if}
                 </h3>
-                <span class="badge badge-accent badge-outline text-nowrap"
+                <span class="badge badge-outline text-nowrap text-slate-500"
                     >{jobLocation}</span
                 >
                 <div class="text-sm tabular-nums text-gray-500 ml-auto">
@@ -53,22 +68,58 @@
                 </div>
             </div>
             {#if companyLocation}
-                <h2 class="text-sm">{companyLocation}</h2>
+                <h2 class="text-sm text-slate-600">{companyLocation}</h2>
             {/if}
         </div>
-
-
     </div>
-    <ul class="list-none overflow-hidden wrapped-list">
-        {#each roles as role, index}
-        <li
-        class="text-xs inline-block font-mono {index !== roles.length - 1 ? 'opacity-60' : ''}"
-        in:fly|global={{ x: -100, opacity: 0, duration: 500, delay: index * 100 }}>
-        {role}
-      </li>
-        {/each}
+    <ul
+        class="list-none overflow-hidden wrapped-list"
+        use:inview
+        on:inview_change={(event) => {
+            const { inView } = event.detail;
+            isRolesInView = inView;
+        }}
+    >
+        {#if isRolesInView}
+            {#each roles as role, i}
+                <li
+                    class="text-xs inline-block font-mono text-slate-500 {i !==
+                    roles.length - 1
+                        ? 'opacity-60'
+                        : ''}"
+                    in:fly|global={{
+                        x: -100,
+                        opacity: 0,
+                        duration: 500,
+                        delay: i * 100,
+                    }}
+                >
+                    {role}
+                </li>
+            {/each}
+        {:else}
+            {#each roles as role, i}
+                <li
+                    class="invisible print:visible text-xs inline-block font-mono text-slate-500 {i !==
+                    roles.length - 1
+                        ? 'opacity-60'
+                        : ''}"
+                >
+                    {role}
+                </li>
+            {/each}
+        {/if}
     </ul>
-    <p class="text-sm text-ellipsis">{jobDescription}</p>
+    <p class="text-slate-500 text-sm text-ellipsis">{jobDescription}</p>
+    {#if techStack.length > 0}
+        <div class="space-x-1">
+            {#each techStack as tech, i}
+                <span class="badge badge-sm badge-ghost text-slate-500 font-mono text-xs">
+                    {tech}
+                </span>
+            {/each}
+        </div>
+    {/if}
 </section>
 
 <style>
