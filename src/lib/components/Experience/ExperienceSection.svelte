@@ -21,7 +21,7 @@
             const { inView } = event.detail;
             isHeaderInView = inView;
         }}
-        class="text-slate-800 font-extrabold text-xl pl-3"
+        class="text-slate-800 font-mono font-extrabold text-2xl pl-3 uppercase"
     >
         {sectionName}
     </h2>
@@ -29,10 +29,10 @@
         <div class="flex-none w-[calc(100%-1rem)] space-y-2">
             <slot />
         </div>
-        <div class="h-fit print:hidden sticky top-4 w-4">
+        <div class="h-fit print:hidden sticky top-2 w-4">
             {#if isSectionInView && !isHeaderInView}
             <h2
-                class="text-slate-800 font-extrabold text-l pl-3 vertical-rl h-fit opacity-100"
+                class="text-slate-800 font-extrabold font-mono text-xl pl-1 vertical-rl h-fit opacity-100 orientation-upright uppercase tracking-[-5px]"
                 in:fly={{y: "-100%"}}
                 out:fade={{duration: 150}}
             >

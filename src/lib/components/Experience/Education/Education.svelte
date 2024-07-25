@@ -18,7 +18,7 @@
 </script>
 
 <section
-    class="break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 p-3 rounded space-y-1"
+    class="break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 p-3 rounded-xl space-y-1"
 >
     <div class="flex flex-column gap-2 items-center">
         <div class="w-full">
@@ -46,7 +46,7 @@
             {/if}
         </div>
     </div>
-    <span class="text-xs inline-block font-mono text-slate-500">
+    <span class="text-xs inline-block font-mono text-slate-500 uppercase">
         {degree}
     </span>
     <p class="text-slate-500 text-sm text-ellipsis">{degreeDescription}</p>

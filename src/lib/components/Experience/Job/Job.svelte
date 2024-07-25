@@ -41,7 +41,7 @@
 </script>
 
 <section
-    class="break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 p-3 rounded space-y-1"
+    class="break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 p-3 rounded-xl space-y-1"
 >
     <div class="flex flex-column gap-2 items-center">
         <div class="w-full">
@@ -83,7 +83,7 @@
         {#if isRolesInView}
             {#each roles as role, i}
                 <li
-                    class="text-xs inline-block font-mono text-slate-500 {i !==
+                    class="text-xs inline-block font-mono uppercase text-slate-500 {i !==
                     roles.length - 1
                         ? 'opacity-60'
                         : ''}"
@@ -98,12 +98,9 @@
                 </li>
             {/each}
         {:else}
-            {#each roles as role, i}
+            {#each roles as role}
                 <li
-                    class="invisible print:visible text-xs inline-block font-mono text-slate-500 {i !==
-                    roles.length - 1
-                        ? 'opacity-60'
-                        : ''}"
+                    class="invisible print:visible text-xs inline-block font-mono uppercase text-slate-500"
                 >
                     {role}
                 </li>
@@ -112,9 +109,9 @@
     </ul>
     <p class="text-slate-500 text-sm text-ellipsis">{jobDescription}</p>
     {#if techStack.length > 0}
-        <div class="space-x-1">
-            {#each techStack as tech, i}
-                <span class="badge badge-sm badge-ghost text-slate-500 font-mono text-xs">
+        <div class="pt-2 gap-2 flex flex-wrap justify-center">
+            {#each techStack as tech}
+                <span class="badge badge-sm badge-ghost text-slate-500 font-mono text-xs hover:badge-neutral h-fit text-center">
                     {tech}
                 </span>
             {/each}
@@ -125,5 +122,6 @@
 <style>
     .wrapped-list li + li::before {
         content: "\00a0→\00a0";
+        opacity: 60% !important;
     }
 </style>

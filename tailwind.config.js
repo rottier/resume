@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}', './index.html'],
@@ -15,7 +16,12 @@ export default {
         },
         '.vertical-lr': {
           writingMode: 'vertical-lr'
-        }
+        },
+        ".orientation-mixed": { "text-orientation": "mixed" },
+        ".orientation-upright": { "text-orientation": "upright" },
+        ".orientation-sideways-right": { "text-orientation": "sideways-right" },
+        ".orientation-sideways": { "text-orientation": "sideways" },
+        ".orientation-glyph": { "text-orientation": "use-glyph-orientation" },
       }
       addUtilities(newUtilities)
     })
@@ -29,11 +35,18 @@ export default {
   theme: {
     extend: {
       screens: {
+        'sm': '512px',
         "print": { "raw": "print" },
         '3xl': '1920px',
         '4xl': '2560px',
         '5xl': '3840px'
-      }
+      },
+      fontFamily: {
+        'mono': ['Azeret Mono', ...defaultTheme.fontFamily.mono]
+      },
+      fontSize: {
+        'xs': '0.7rem',
+      },
     },
     variants: {
       extend: {},
