@@ -8,7 +8,7 @@
 </script>
 
 <section
-    class="space-y-2 px-4"
+    class="space-y-2 pl-3"
     use:inview
     on:inview_change={(event) => {
         const { inView } = event.detail;

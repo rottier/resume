@@ -9,27 +9,30 @@
 <main>
   <div class="flex items-center justify-center">
     <div class="space-y-8 m-16 max-w-prose print:max-w-full">
-        <div class="space-y-2">
-    <h1 class="pl-0 sm:pl-8 text-slate-900 font-mono uppercase font-extrabold text-3xl text-center sm:text-left">
-        Marino Rottier
+      <div class="space-y-2">
+        <h1
+          class="pl-0 sm:pl-8 text-slate-900 font-mono uppercase font-extrabold text-3xl text-center sm:text-left"
+        >
+          Marino Rottier
         </h1>
-      <div class="p-4 break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 ml-4 mr-8 rounded-xl space-y-1">
-
-        <div class="sm:flex sm:flex-row-reverse gap-8">
+        <div
+          class="p-4 break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 ml-3 mr-4 rounded-xl space-y-1"
+        >
+          <div class="sm:flex sm:flex-row-reverse gap-8">
             <div class="avatar ml-auto">
-                <div class="w-full sm:w-32 rounded-md sm:max-h-48">
-                  <img alt="Marino Rottier" src="marino.jpeg" />
-                </div>
+              <div class="w-full sm:w-32 rounded-md sm:max-h-48">
+                <img alt="Marino Rottier" src="marino.jpeg" />
               </div>
-          <div class="flex flex-row items-center">
-            <p class="text-slate-500 text-sm h-fit">
-              Broadly oriented software developer from Maarssen (The
-              Netherlands). Experienced in building desktop and web applications
-              front-to-back. Passionate about modern UI and CI. Also an
-              experienced drummer, just ask my neighbors!
-            </p>
+            </div>
+            <div class="flex flex-row items-center">
+              <p class="text-slate-500 text-sm h-fit">
+                Broadly oriented software developer from Maarssen (The
+                Netherlands). Experienced in building desktop and web
+                applications front-to-back. Passionate about modern UI and CI.
+                Also an experienced drummer, just ask my neighbors!
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <ExperienceSection sectionName="Skills">
