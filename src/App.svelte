@@ -6,8 +6,8 @@
 </script>
 
 <main>
-    <div class="bg-white flex items-center justify-center">
-        <div class="max-w-prose space-y-8 m-16">
+    <div class="flex items-center justify-center">
+        <div class="space-y-8 m-16 max-w-prose print:max-w-full">
             <ExperienceSection sectionName="Who am I?">
                 <div class="flex flex-row">
                     <p class="text-slate-500 px-3 text-sm">

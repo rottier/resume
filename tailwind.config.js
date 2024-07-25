@@ -2,10 +2,10 @@
 const plugin = require('tailwindcss/plugin');
 
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{html,js,svelte,ts}', './index.html'],
   plugins: [
     require('daisyui'),
-    plugin(function({ addUtilities, addComponents, e, prefix, config }) {
+    plugin(function ({ addUtilities, addComponents, e, prefix, config }) {
       const newUtilities = {
         '.horizontal-tb': {
           writingMode: 'horizontal-tb',
@@ -28,16 +28,15 @@ export default {
 
   theme: {
     extend: {
-      spacing: {
-        "7": "200px",
-      },
       screens: {
         "print": { "raw": "print" },
-        // => @media  print { ... }
+        '3xl': '1920px',
+        '4xl': '2560px',
+        '5xl': '3840px'
       }
     },
-  },
-  variants: {
-    extend: {},
+    variants: {
+      extend: {},
+    },
   },
 }

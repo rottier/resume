@@ -20,3 +20,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer base {
+  html {
+     @apply 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl print:text-4xl;
+  }
+}
