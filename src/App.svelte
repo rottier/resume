@@ -33,7 +33,7 @@
         </div>
       </div>
       <ExperienceSection sectionName="Skills">
-        <div class="grid grid-cols-2 gap-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <Skills
             skillSetName="Development"
             skills={[
