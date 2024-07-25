@@ -1,22 +1,25 @@
 <script lang="ts">
+  import { Envelope, Phone, Home, Cake, Printer, Identification } from "@steeze-ui/heroicons";
   import Education from "./lib/components/Experience/Education/Education.svelte";
   import ExperienceSection from "./lib/components/Experience/ExperienceSection.svelte";
   import { JobLocation } from "./lib/components/Experience/Job";
   import Job from "./lib/components/Experience/Job/Job.svelte";
   import Skills from "./lib/components/Experience/Skills/Skills.svelte";
+  import IconBadge from "./lib/components/IconBadge/IconBadge.svelte";
+  import { Icon } from "@steeze-ui/svelte-icon";
 </script>
 
 <main>
   <div class="flex items-center justify-center">
-    <div class="space-y-8 m-16 max-w-prose print:max-w-full">
+    <div class="space-y-8 m-8 max-w-prose print:max-w-full">
       <div class="space-y-2">
         <h1
-          class="pl-0 sm:pl-8 text-slate-900 font-mono uppercase font-extrabold text-3xl text-center sm:text-left"
+          class="pl-0 sm:pl-8 text-slate-800 font-mono uppercase font-extrabold text-3xl text-center sm:text-left"
         >
           Marino Rottier
         </h1>
         <div
-          class="p-4 break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 ml-3 mr-4 rounded-xl space-y-1"
+          class="p-4 break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 mx-3 rounded-xl space-y-1"
         >
           <div class="sm:flex sm:flex-row-reverse gap-8">
             <div class="avatar ml-auto">
@@ -24,13 +27,43 @@
                 <img alt="Marino Rottier" src="marino.jpeg" />
               </div>
             </div>
-            <div class="flex flex-row items-center">
-              <p class="text-slate-500 text-sm h-fit">
-                Broadly oriented software developer from Maarssen (The
-                Netherlands). Experienced in building desktop and web
-                applications front-to-back. Passionate about modern UI and CI.
-                Also an experienced drummer, just ask my neighbors!
-              </p>
+            <div class="space-y-3 h-full">
+              <div class="flex flex-row items-center">
+                <p class="text-slate-500 text-sm h-fit">
+                  Broadly oriented software developer from The Netherlands.
+                  Experienced in building desktop and web applications
+                  front-to-back. A self-taught programmer with a history in
+                  building (graphical) applications for the television
+                  broadcasting industry. Passionate about modern UI and CI. Also
+                  an experienced drummer, just ask my neighbors!
+                </p>
+              </div>
+              <div class="flex flex-row flex-wrap gap-1">
+                <IconBadge
+                  href="tel:+31619930842"
+                  icon={Phone}
+                  label="+31 6 19930842"
+                />
+                <IconBadge
+                  href="mailto:marino@rottier.nl"
+                  icon={Envelope}
+                  label="marino@rottier.nl"
+                />
+                <IconBadge
+                  href="https://maps.google.com/?q=52.1270545188124, 5.0581124938230645"
+                  icon={Home}
+                  label="J. Reyneke van Stuwestraat 6, Maarssen"
+                />
+                <IconBadge
+                  href="https://www.onthisday.com/date/1993/september/8"
+                  icon={Cake}
+                  label="08-09-1993"
+                />
+                <IconBadge
+                icon={Identification}
+                label="Driving License B + AM"
+              />
+              </div>
             </div>
           </div>
         </div>
@@ -130,7 +163,7 @@
           roles={["Application Engineer", "Software Engineer"]}
           yearStart={2021}
           yearEnd={0}
-          jobDescription={"Starting off as an application engineer, I developed control and monitoring applications for major broadcasters like BBC, ITN, and ORF. This involved setting up the development environment, including version control, deployment workflows, and code documentation, as well as creating a package/module framework for the proprietary scripting language. Transitioning to a software engineer role, I worked on Cerebrum, a broadcast control and monitoring system, focusing on web-based control using React and TypeScript and extending the C++ based UI. Additionally, I prototyped applications with Figma, worked on CI/CD pipelines, and, as part of an interdepartmental UI team, improved and standardized our front-end practices and tools."}
+          jobDescription={"Starting off as an application engineer, I developed control and monitoring applications for major broadcasters like BBC, ITN, and ORF. This also involved setting up the development environment, including version control, deployment workflows, and code documentation, as well as creating a package/module framework for the proprietary scripting language. Transitioning to a software engineering role, I work on Cerebrum, a broadcast control and monitoring system. My primary focus: web-based control of the C++ server application using React and TypeScript. Additionally, I prototyped applications with Figma, worked on CI/CD pipelines, and, as part of an interdepartmental UI team, improved and standardized our front-end practices and tools."}
           techStack={[
             "C++",
             "React.js",
@@ -247,5 +280,13 @@
         />
       </ExperienceSection>
     </div>
+  </div>
+  <div class="fixed bottom-0 right-0 p-2 print:hidden">
+    <button
+      class="btn btn-outline btn-xs sm:btn-sm sm:border-2 md:btn-md md:border-2 lg:btn-lg lg:border-4 text-slate-800 opacity-25 hover:opacity-100"
+      on:click={() => {window.alert("Please consider saving my resume as a PDF instead of printing it. Mother Nature thanks you!"); window.print();}}
+    >
+      <Icon src={Printer} theme="outline" /></button
+    >
   </div>
 </main>

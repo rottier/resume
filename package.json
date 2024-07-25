@@ -29,6 +29,8 @@
     "vite": "^5.3.4"
   },
   "dependencies": {
+    "@steeze-ui/heroicons": "^2.4.0",
+    "@steeze-ui/svelte-icon": "^1.5.0",
     "lodash": "^4.17.21",
     "svelte-inview": "^4.0.2"
   }

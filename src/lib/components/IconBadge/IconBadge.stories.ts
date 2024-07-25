@@ -1,21 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/svelte';
-import Button from './Button.svelte';
+import IconBadge from './IconBadge.svelte'
 
 const meta = {
-	title: 'Components/Button',
+	title: 'Components/IconBadge',
 	tags: ['autodocs'],
-	component: Button,
-	argTypes: {
-		width: { control: 'number' }
-	}
-} satisfies Meta<Button>;
+	component: IconBadge,
+} satisfies Meta<IconBadge>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 	render: (args) => ({
-		Component: Button,
+		Component: IconBadge,
 		props: args
 	}),
 	args: {}
