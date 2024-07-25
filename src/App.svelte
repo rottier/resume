@@ -10,7 +10,7 @@
 </script>
 
 <main>
-  <div class="flex items-center justify-center">
+  <div class="flex justify-center">
     <div class="space-y-8 m-8 max-w-prose print:max-w-full">
       <div class="space-y-2">
         <h1
@@ -21,9 +21,9 @@
         <div
           class="p-4 break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 mx-3 rounded-xl space-y-1"
         >
-          <div class="sm:flex sm:flex-row-reverse gap-8">
+          <div class="sm:flex sm:flex-row-reverse gap-4">
             <div class="avatar ml-auto">
-              <div class="w-full sm:w-32 rounded-md sm:max-h-48">
+              <div class="w-full sm:w-40 rounded-md">
                 <img alt="Marino Rottier" src="marino.jpeg" />
               </div>
             </div>
@@ -50,19 +50,19 @@
                   label="marino@rottier.nl"
                 />
                 <IconBadge
-                  href="https://maps.google.com/?q=52.1270545188124, 5.0581124938230645"
+                  href="https://www.google.com/maps/place/J.+Reyneke+van+Stuwestraat+6,+3604+DJ+Maarssen"
                   icon={Home}
                   label="J. Reyneke van Stuwestraat 6, Maarssen"
-                />
-                <IconBadge
-                  href="https://www.onthisday.com/date/1993/september/8"
-                  icon={Cake}
-                  label="08-09-1993"
                 />
                 <IconBadge
                 icon={Identification}
                 label="Driving License B + AM"
               />
+                <IconBadge
+                  href="https://www.onthisday.com/date/1993/september/8"
+                  icon={Cake}
+                  label="08-09-1993"
+                />
               </div>
             </div>
           </div>
@@ -115,6 +115,7 @@
               "Scaled Agile",
               "Technical Investigation",
               "Documentation",
+              "Architecture Diagrams",
               "Unit Testing",
               "End-to-End Testing",
               "Continuous Integration",
@@ -122,6 +123,7 @@
               "Test-Driven Development",
               "Automation",
               "Prototyping",
+              "Mockups",
             ]}
           />
           <Skills
@@ -150,6 +152,7 @@
               "Analytical",
               "Problem Solver",
               "Extravert",
+              "Humorous"
             ]}
           />
         </div>
@@ -216,7 +219,7 @@
           roles={["Graphics Operator", "Technical Artist"]}
           yearStart={2016}
           yearEnd={2018}
-          jobDescription={"My broadcasting career began as a graphics operator, where I created, scripted, and operated real-time graphics for live TV productions, from Dutch daily talk shows to international broadcasts. To enhance the company's augmented reality offerings, I transitioned to a technical artist, self-teaching gaming technology principles. In this role, I programmed real-time graphics pipelines and applications for live TV, specializing in virtual production. I developed data-driven augmented reality graphics for Dutch elections and the 2017 FIFA World Cup coverage on Mediaset in Italy."}
+          jobDescription={"My broadcasting career began as a graphics operator, where I created, scripted, and operated real-time graphics for live TV productions, from Dutch daily talk shows to international broadcasts. To enhance the company's augmented reality offerings, I transitioned to a technical artist, self-teaching gaming technology principles. In this role, I programmed real-time graphics pipelines and applications for live TV, specializing in virtual production. I developed data-driven augmented reality graphics for several Dutch elections and the 2017 FIFA World Cup coverage on Mediaset in Italy."}
           techStack={[
             "Visual Basic",
             "Unreal Engine",
@@ -283,7 +286,7 @@
   </div>
   <div class="fixed bottom-0 right-0 p-2 print:hidden">
     <button
-      class="btn btn-outline btn-xs sm:btn-sm sm:border-2 md:btn-md md:border-2 lg:btn-lg lg:border-4 text-slate-800 opacity-25 hover:opacity-100"
+      class="btn btn-outline btn-xs sm:btn-sm sm:border-2 lg:btn-md lg:border-2 text-slate-800 opacity-25 hover:opacity-100"
       on:click={() => {window.alert("Please consider saving my resume as a PDF instead of printing it. Mother Nature thanks you!"); window.print();}}
     >
       <Icon src={Printer} theme="outline" /></button

@@ -35,7 +35,6 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': '512px',
         "print": { "raw": "print" },
         '3xl': '1920px',
         '4xl': '2560px',

@@ -6,7 +6,7 @@
 <section
   class="break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 p-3 rounded-xl space-y-1"
 >
-  <h3 class="font-bold text-l w-fit text-slate-700">
+  <h3 class="font-bold text-l text-center text-slate-700">
     {skillSetName}
   </h3>
   {#if skills.length > 0}
