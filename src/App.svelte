@@ -1,5 +1,13 @@
 <script lang="ts">
-  import { Envelope, Phone, Home, Cake, Printer, Identification } from "@steeze-ui/heroicons";
+  import {
+    Envelope,
+    Phone,
+    Home,
+    Cake,
+    Printer,
+    Identification,
+    Language,
+  } from "@steeze-ui/heroicons";
   import Education from "./lib/components/Experience/Education/Education.svelte";
   import ExperienceSection from "./lib/components/Experience/ExperienceSection.svelte";
   import { JobLocation } from "./lib/components/Experience/Job";
@@ -55,14 +63,15 @@
                   label="J. Reyneke van Stuwestraat 6, Maarssen"
                 />
                 <IconBadge
-                icon={Identification}
-                label="Driving License B + AM"
-              />
+                  icon={Identification}
+                  label="Driving License B + AM"
+                />
                 <IconBadge
                   href="https://www.onthisday.com/date/1993/september/8"
                   icon={Cake}
                   label="08-09-1993"
                 />
+                <IconBadge icon={Language} label="Dutch + English" />
               </div>
             </div>
           </div>
@@ -152,7 +161,7 @@
               "Analytical",
               "Problem Solver",
               "Extravert",
-              "Humorous"
+              "Humorous",
             ]}
           />
         </div>
@@ -287,7 +296,12 @@
   <div class="fixed bottom-0 right-0 p-2 print:hidden">
     <button
       class="btn btn-outline btn-xs sm:btn-sm sm:border-2 lg:btn-md lg:border-2 text-slate-800 opacity-25 hover:opacity-100"
-      on:click={() => {window.alert("Please consider saving my resume as a PDF instead of printing it. Mother Nature thanks you!"); window.print();}}
+      on:click={() => {
+        window.alert(
+          "Please consider saving my resume as a PDF instead of printing it. Mother Nature thanks you!"
+        );
+        window.print();
+      }}
     >
       <Icon src={Printer} theme="outline" /></button
     >
