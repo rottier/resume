@@ -24,3 +24,6 @@ dist-ssr
 
 # Libraries
 storybook-static
+
+# Generated CV
+public/cv.pdf
