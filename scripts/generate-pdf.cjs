@@ -75,7 +75,7 @@ const generatePdf = async () => {
 
     await page.goto(url, { waitUntil: 'networkidle2' });
     await page.pdf({
-      path: 'dist/Marino Rottier - curriculum vitae.pdf',
+      path: 'public/Marino Rottier - curriculum vitae.pdf',
       format: 'A4',
       width: '1920px',  // Specify width as per viewport
       height: '1080px', // Specify height as per viewport
