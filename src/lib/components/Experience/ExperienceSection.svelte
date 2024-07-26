@@ -25,7 +25,7 @@
     >
         {sectionName}
     </h2>
-    <div class="flex flex-column">
+    <div class="flex flex-row">
         <div class="flex-none w-[calc(100%-1rem)] space-y-2">
             <slot />
         </div>

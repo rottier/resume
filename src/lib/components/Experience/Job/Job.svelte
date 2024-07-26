@@ -43,10 +43,10 @@
 <section
     class="break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 p-3 rounded-xl space-y-1"
 >
-    <div class="flex flex-column gap-2 items-center">
+    <div class="flex flex-col gap-2 items-center">
         <div class="w-full">
-            <div class="flex flex-column gap-2 items-center">
-                <h3 class="font-bold text-l w-fit text-slate-700">
+            <div class="flex flex-col-reverse sm:flex-row gap-2 items-center">
+                <span class="font-bold text-l text-center sm:text-left w-fit text-slate-700">
                     {#if companyWebsite}
                         <a
                             class="hover:text-slate-600"
@@ -56,7 +56,7 @@
                     {:else}
                         {companyName}
                     {/if}
-                </h3>
+                </span>
                 <span class="badge badge-outline text-nowrap text-slate-500"
                     >{jobLocation}</span
                 >
@@ -68,12 +68,12 @@
                 </div>
             </div>
             {#if companyLocation}
-                <h2 class="text-sm text-slate-600">{companyLocation}</h2>
+                <h2 class="text-sm text-slate-600 text-center sm:text-left">{companyLocation}</h2>
             {/if}
         </div>
     </div>
     <ul
-        class="list-none overflow-hidden wrapped-list"
+        class="list-none overflow-hidden wrapped-list text-center sm:text-left"
         use:inview
         on:inview_change={(event) => {
             const { inView } = event.detail;

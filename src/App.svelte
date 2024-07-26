@@ -287,15 +287,6 @@
           yearStart={2010}
           yearEnd={2013}
         />
-        <Education
-          schoolName="'t Atrium"
-          schoolLocation="Amersfoort, The Netherlands"
-          schoolWebsite="http://t-atrium.nl"
-          degree="MAVO"
-          degreeDescription="Economics and sports study program."
-          yearStart={2005}
-          yearEnd={2009}
-        />
       </ExperienceSection>
     </div>
   </div>

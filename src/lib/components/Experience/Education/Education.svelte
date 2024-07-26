@@ -20,10 +20,10 @@
 <section
     class="break-inside-avoid overflow-hidden border border-slate-500 border-opacity-20 p-3 rounded-xl space-y-1"
 >
-    <div class="flex flex-column gap-2 items-center">
+    <div class="flex flex-col gap-2 items-center">
         <div class="w-full">
-            <div class="flex flex-column gap-2 items-center">
-                <h3 class="font-bold text-l w-fit text-slate-700">
+            <div class="flex flex-col-reverse sm:flex-row gap-2 items-center">
+                <h3 class="font-bold text-l text-center sm:text-left w-fit text-slate-700">
                     {#if schoolWebsite}
                         <a
                             class="hover:text-slate-600"
@@ -42,12 +42,14 @@
                 </div>
             </div>
             {#if schoolLocation}
-                <h2 class="text-sm text-slate-600">{schoolLocation}</h2>
+                <h2 class="text-sm text-slate-600 text-center sm:text-left">{schoolLocation}</h2>
             {/if}
         </div>
     </div>
-    <span class="text-xs inline-block font-mono text-slate-500 uppercase">
-        {degree}
-    </span>
+    <div class="text-center sm:text-left">
+        <span class="text-xs inline-block font-mono text-slate-500 uppercase">
+          {degree}
+        </span>
+      </div>
     <p class="text-slate-500 text-sm text-ellipsis">{degreeDescription}</p>
 </section>
