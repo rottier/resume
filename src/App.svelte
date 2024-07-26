@@ -82,39 +82,41 @@
           <Skills
             skillSetName="Development"
             skills={[
+              "JavaScript",
+              "TypeScript",
+              "Python",
+              "C++",
+              "Rust",
+              "C#",
+              "Lua",
+              "Visual Basic",
               "React.js",
               "Svelte",
-              "C++",
-              "TypeScript",
-              "JavaScript",
               "Node.js",
-              "Rust",
-              "Lua",
-              "C#",
-              "Unreal Engine",
-              "Visual Basic",
+              "HTML5",
+              "CSS",
+              "SASS",
               "Tailwind CSS",
+              "Webpack",
+              "Turborepo",
+              "Lerna",
               "Storybook",
+              "React Testing Library",
+              "Jest",
+              "Cypress",
+              "MFC",
+              "Google Test",
               "Network Protocols",
               "WebSocket",
               "Rest APIs",
-              "Google Test",
-              "React Testing Library",
-              "Artifactory",
-              "Turborepo",
-              "Lerna",
-              "Jest",
-              "Webpack",
+              "Dear ImGui",
+              "Unreal Engine",
+              "Bash",
+              "PowerShell",
+              "Git",
               "Mermaid",
               "PlantUML",
-              "Cypress",
-              "Dear ImGui",
-              "MFC",
-              "Python",
-              "Git",
-              "Bash",
-              "HTML5",
-              "CSS",
+              "Artifactory"
             ]}
           />
           <Skills
@@ -175,7 +177,7 @@
           roles={["Application Engineer", "Software Engineer"]}
           yearStart={2021}
           yearEnd={0}
-          jobDescription={"Starting off as an application engineer, I developed control and monitoring applications for major broadcasters like BBC, ITN, and ORF. This also involved setting up the development environment, including version control, deployment workflows, and code documentation, as well as creating a package/module framework for the proprietary scripting language. Transitioning to a software engineering role, I work on Cerebrum, a broadcast control and monitoring system. My primary focus: web-based control of the C++ server application using React and TypeScript. Additionally, I prototyped applications with Figma, worked on CI/CD pipelines, and, as part of an interdepartmental UI team, improved and standardized our front-end practices and tools."}
+          jobDescription={"Starting off as an application engineer, I developed control and monitoring applications for major broadcasters like BBC, ITN, and ORF. This also involved setting up the development environment, including version control, deployment workflows, and code documentation, as well as creating a package/module framework for the proprietary scripting language. Transitioning to a software engineering role, I have been working on Cerebrum, a broadcast control and monitoring system. My primary focus: web-based control of the server application using React and TypeScript and extension of the user interface and workflow design application in C++. Additionally, I prototype user interfaces with Figma, work on CI/CD pipelines, and, as part of an interdepartmental UI team, improve and standardize our front-end practices and tools."}
           techStack={[
             "C++",
             "React.js",
@@ -195,6 +197,7 @@
             "Google Test",
             "Artifactory",
             "TeamCity",
+            "PowerShell"
           ]}
         />
         <Job
@@ -205,7 +208,7 @@
           roles={["Technical Artist", "Software Engineer"]}
           yearStart={2018}
           yearEnd={2021}
-          jobDescription={"In my role as a software engineer, I worked on a C++/Lua-based broadcast control system for virtual production and real-time graphics, used in large-scale TV productions like the Eurovision Song Contest, Extreme E, and Sky News Arabia. This involved implementing third-party protocols (HTTP, WebSockets, raw TCP, and UDP) and creating a GUI framework configurable from Lua, enabling technical artists and operators to quickly compose workspaces and playlists for time-critical broadcasting operations."}
+          jobDescription={"Worked on a C++/Lua-based broadcast control system for virtual production and real-time graphics, used in large-scale TV productions like the Eurovision Song Contest, Extreme E, and Sky News Arabia. This involved implementing third-party protocols (HTTP, WebSockets, raw TCP, and UDP) and creating a GUI framework configurable from Lua, enabling technical artists and operators to quickly compose workspaces and playlists for time-critical broadcasting operations."}
           techStack={[
             "C++",
             "Lua",
@@ -295,7 +298,7 @@
   </div>
   <div class="fixed bottom-0 right-0 p-2 print:hidden">
     <button
-      class="btn btn-outline btn-xs sm:btn-sm sm:border-2 lg:btn-md lg:border-2 text-slate-800 opacity-25 hover:opacity-100"
+      class="btn btn-outline btn-sm border-1 md:btn-md md:border-2 md:p-2 aspect-square p-1 text-slate-800 opacity-25 hover:opacity-100"
       on:click={() => {
         window.alert(
           "Please consider saving my resume as a PDF instead of printing it. Mother Nature thanks you!"
