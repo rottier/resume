@@ -270,16 +270,18 @@
       </ExperienceSection>
       <ExperienceSection sectionName="Education">
         <Education
-          schoolName="Utrecht University of Applied Sciences"
+          schoolName="University of Applied Sciences"
           schoolLocation="Utrecht, The Netherlands"
+          schoolWebsite="http://hu.nl"
           degree="Journalism"
           degreeDescription="Specialized in television. Member of the Board of Appeals and the Dispute Committee. Not finished."
           yearStart={2013}
           yearEnd={2014}
         />
         <Education
-          schoolName="Grafisch Lyceum Utrecht"
+          schoolName="Grafisch Lyceum"
           schoolLocation="Utrecht, The Netherlands"
+          schoolWebsite="http://glu.nl"
           degree="Media Management"
           degreeDescription="Followed the media intermediary specialization, accelerated course. Interned as an online marketeer at a book publisher and a technical producer for the online TV channel of a Dutch national newspaper."
           yearStart={2010}
@@ -288,6 +290,7 @@
         <Education
           schoolName="'t Atrium"
           schoolLocation="Amersfoort, The Netherlands"
+          schoolWebsite="http://t-atrium.nl"
           degree="MAVO"
           degreeDescription="Economics and sports study program."
           yearStart={2005}
