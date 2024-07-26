@@ -18,7 +18,7 @@
 
 <main>
   <div class="flex justify-center">
-  <div class="fixed w-full h-full bg-mountains bg-fixed bg-cover opacity-10 print:hidden" />
+  <div class="fixed w-full h-full bg-mountains bg-fixed bg-cover opacity-10 pointer-events-none print:hidden" />
     <div class="space-y-8 m-8 max-w-prose print:max-w-full">
       <div class="space-y-2">
         <h1
