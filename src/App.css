@@ -35,4 +35,8 @@ body {
   body {
     zoom: 1;
   }
+
+  html {
+    background-color: white !important;
+  }
 }
