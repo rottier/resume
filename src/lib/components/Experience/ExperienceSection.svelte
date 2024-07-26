@@ -32,7 +32,7 @@
     <div class="h-fit print:hidden sticky top-2 w-4 basis-full">
       {#if isSectionInView && !isHeaderInView}
         <h2
-          class="text-slate-800 font-extrabold font-mono text-xl pl-1 vertical-rl h-fit opacity-100 orientation-upright uppercase tracking-[-5px]"
+          class="text-slate-800 font-extrabold font-mono text-xl pl-1 vertical-rl h-fit opacity-100 orientation-upright uppercase tracking-[-6px]"
           in:fly={{ y: "-100%" }}
           out:fade={{ duration: 150 }}
         >
