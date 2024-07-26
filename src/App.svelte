@@ -17,7 +17,7 @@
 </script>
 
 <main>
-  <div class="fixed w-full h-full bg-mountains bg-auto sm:bg-cover opacity-10 pointer-events-none print:hidden" />
+  <div class="fixed w-lvw h-lvh bg-mountains bg-auto sm:bg-cover opacity-10 pointer-events-none print:hidden" />
   <div class="flex justify-center">
     <div class="space-y-8 m-8 max-w-prose print:max-w-full">
       <div class="space-y-2">
