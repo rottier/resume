@@ -170,7 +170,7 @@
       <ExperienceSection sectionName="Experience">
         <Job
           companyName="EVS Broadcast Equipment"
-          companyWebsite="http://www.evs.com"
+          companyWebsite="http://evs.com"
           companyLocation="Wokingham, England, United Kingdom"
           jobLocation={JobLocation.Remote}
           roles={["Application Engineer", "Software Engineer"]}
@@ -201,7 +201,7 @@
         />
         <Job
           companyName="NEP The Netherlands"
-          companyWebsite="http://www.nepworldwide.nl"
+          companyWebsite="http://nepworldwide.nl"
           companyLocation="Hilversum, The Netherlands"
           jobLocation={JobLocation.Hybrid}
           roles={["Technical Artist", "Software Engineer"]}
@@ -285,6 +285,14 @@
           degreeDescription="Followed the media intermediary specialization, accelerated course. Interned as an online marketeer at a book publisher and a technical producer for the online TV channel of a Dutch national newspaper."
           yearStart={2010}
           yearEnd={2013}
+        />
+        <Education
+          schoolName="'t Atrium"
+          schoolLocation="Amersfoort, The Netherlands"
+          degree="MAVO"
+          degreeDescription="Economics and sports study program."
+          yearStart={2005}
+          yearEnd={2009}
         />
       </ExperienceSection>
     </div>
