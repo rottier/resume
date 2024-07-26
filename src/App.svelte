@@ -15,6 +15,7 @@
   import Skills from "./lib/components/Experience/Skills/Skills.svelte";
   import IconBadge from "./lib/components/IconBadge/IconBadge.svelte";
   import { Icon } from "@steeze-ui/svelte-icon";
+  import ButtonPdf from "./lib/components/ButtonPDF/ButtonPDF.svelte";
 </script>
 
 <main>
@@ -291,7 +292,8 @@
     </div>
   </div>
   <div class="fixed bottom-0 right-0 p-2 print:hidden">
-    <button
+    <ButtonPdf/>
+    <!-- <button
       class="btn btn-outline btn-sm border-1 md:btn-md md:border-2 md:p-2 aspect-square p-1 text-slate-800 opacity-25 hover:opacity-100"
       on:click={() => {
         window.alert(
@@ -301,6 +303,6 @@
       }}
     >
       <Icon src={Printer} theme="outline" /></button
-    >
+    > -->
   </div>
 </main>
