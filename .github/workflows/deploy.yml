@@ -18,7 +18,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: yarn install
+        run: git checkout --theirs yarn.lock && yarn install
 
       - name: Build project
         run: yarn build
