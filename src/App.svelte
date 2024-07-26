@@ -31,7 +31,7 @@
         >
           <div class="sm:flex sm:flex-row-reverse gap-4">
             <div class="avatar ml-auto">
-              <div class="w-full sm:w-40 rounded-md bg-mountains bg-fixed bg-cover">
+              <div class="w-full sm:w-40 rounded-md bg-mountains bg-fixed bg-cover print:bg-local">
                 <img alt="Marino Rottier" src="rino.png" class="backdrop-blur-sm rounded-md" />
               </div>
             </div>
