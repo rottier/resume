@@ -17,7 +17,7 @@
 </script>
 
 <main>
-  <div class="fixed w-full h-full bg-mountains bg-cover bg-center opacity-10 pointer-events-none print:hidden" />
+  <div class="fixed w-full h-full bg-mountains bg-auto sm:bg-cover opacity-10 pointer-events-none print:hidden" />
   <div class="flex justify-center">
     <div class="space-y-8 m-8 max-w-prose print:max-w-full">
       <div class="space-y-2">
@@ -31,7 +31,7 @@
         >
           <div class="sm:flex sm:flex-row-reverse gap-4">
             <div class="avatar ml-auto">
-              <div class="w-full sm:w-40 rounded-md bg-mountains bg-fixed bg-center bg-cover print:bg-local">
+              <div class="w-full sm:w-40 rounded-md bg-mountains bg-fixed bg-auto sm:bg-cover print:bg-local">
                 <img alt="Marino Rottier" src="rino.png" class="backdrop-blur-sm rounded-md" />
               </div>
             </div>
