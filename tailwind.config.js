@@ -46,6 +46,10 @@ export default {
       fontSize: {
         'xs': '0.7rem',
       },
+      backgroundImage: {
+        'avatar': "url('/rino.png')",
+        'mountains': "url('/mountains.jpg')",
+      }
     },
     variants: {
       extend: {},

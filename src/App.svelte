@@ -18,6 +18,7 @@
 
 <main>
   <div class="flex justify-center">
+  <div class="fixed w-full h-full bg-mountains bg-fixed bg-cover opacity-10 print:hidden" />
     <div class="space-y-8 m-8 max-w-prose print:max-w-full">
       <div class="space-y-2">
         <h1
@@ -30,8 +31,8 @@
         >
           <div class="sm:flex sm:flex-row-reverse gap-4">
             <div class="avatar ml-auto">
-              <div class="w-full sm:w-40 rounded-md">
-                <img alt="Marino Rottier" src="marino.jpeg" />
+              <div class="w-full sm:w-40 rounded-md bg-mountains bg-fixed bg-cover">
+                <img alt="Marino Rottier" src="rino.png" />
               </div>
             </div>
             <div class="space-y-3 h-full">
