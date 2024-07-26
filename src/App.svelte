@@ -17,8 +17,8 @@
 </script>
 
 <main>
-  <div class="fixed w-lvw h-lvh bg-mountains bg-fixed 2xl:bg-cover opacity-20 pointer-events-none print:hidden">
-    <div class="w-full h-full bg-gradient-to-b from-transparent to-white" />
+  <div class="fixed w-lvw h-lvh bg-mountains bg-fixed 2xl:bg-cover opacity-10 pointer-events-none print:hidden">
+    <div class="absolute w-full h-1/4 bottom-0 bg-gradient-to-b from-transparent to-white to-50%" />
   </div>
   <div class="flex justify-center">
     <div class="space-y-8 m-8 max-w-prose print:max-w-full">
