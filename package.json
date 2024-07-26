@@ -1,5 +1,6 @@
 {
   "name": "resume",
+  "homepage": "https://rottier.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json",
-    "deploy": "yarn gh-pages -d dist"
+    "predeploy": "yarn build",
+    "deploy": "yarn gh-pages -d build"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.2.4",
