@@ -2,7 +2,6 @@
   import { ArrowDownTray } from "@steeze-ui/heroicons";
   import { Icon } from "@steeze-ui/svelte-icon";
   const pdfUrl = new URL('/cv.pdf?url', import.meta.url).href
-//   import pdfUrl from '/cv.pdf?url';
 
   function downloadFile(fileName: string) {
     const anchor = document.createElement("a");

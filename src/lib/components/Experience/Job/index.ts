@@ -1,7 +1,7 @@
-export * from './Job.svelte'
+export * from "./Job.svelte";
 
 export enum JobLocation {
-    OnSite = "On-site",
-    Hybrid = "Hybrid",
-    Remote = "Remote"
+  OnSite = "On-site",
+  Hybrid = "Hybrid",
+  Remote = "Remote",
 }

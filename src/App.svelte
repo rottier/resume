@@ -4,7 +4,6 @@
     Phone,
     Home,
     Cake,
-    Printer,
     Identification,
     Language,
   } from "@steeze-ui/heroicons";
@@ -14,7 +13,6 @@
   import Job from "./lib/components/Experience/Job/Job.svelte";
   import Skills from "./lib/components/Experience/Skills/Skills.svelte";
   import IconBadge from "./lib/components/IconBadge/IconBadge.svelte";
-  import { Icon } from "@steeze-ui/svelte-icon";
   import ButtonPdf from "./lib/components/ButtonPDF/ButtonPDF.svelte";
 </script>
 
@@ -117,7 +115,7 @@
               "Git",
               "Mermaid",
               "PlantUML",
-              "Artifactory"
+              "Artifactory",
             ]}
           />
           <Skills
@@ -198,7 +196,7 @@
             "Google Test",
             "Artifactory",
             "TeamCity",
-            "PowerShell"
+            "PowerShell",
           ]}
         />
         <Job
@@ -292,17 +290,6 @@
     </div>
   </div>
   <div class="fixed bottom-0 right-0 p-2 print:hidden">
-    <ButtonPdf/>
-    <!-- <button
-      class="btn btn-outline btn-sm border-1 md:btn-md md:border-2 md:p-2 aspect-square p-1 text-slate-800 opacity-25 hover:opacity-100"
-      on:click={() => {
-        window.alert(
-          "Please consider saving my resume as a PDF instead of printing it. Mother Nature thanks you!"
-        );
-        window.print();
-      }}
-    >
-      <Icon src={Printer} theme="outline" /></button
-    > -->
+    <ButtonPdf />
   </div>
 </main>
