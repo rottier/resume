@@ -224,7 +224,7 @@
         />
         <Job
           companyName="EMG NL"
-          companyWebsite="http://www.nl.emglive.com"
+          companyWebsite="http://nl.emglive.com"
           companyLocation="Hilversum, The Netherlands"
           jobLocation={JobLocation.OnSite}
           roles={["Graphics Operator", "Technical Artist"]}
