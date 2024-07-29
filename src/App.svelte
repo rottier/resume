@@ -300,7 +300,8 @@
       </ExperienceSection>
     </div>
   </div>
-  <div class="fixed bottom-0 right-0 p-2 print:hidden">
+  <div class="fixed flex flex-col gap-2 bottom-0 right-0 p-2 print:hidden">
+    <ButtonPdf print={true} />
     <ButtonPdf />
   </div>
 </main>
