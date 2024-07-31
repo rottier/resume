@@ -275,8 +275,8 @@
           schoolName="University of Applied Sciences"
           schoolLocation="Utrecht, The Netherlands"
           schoolWebsite="http://hu.nl"
-          degree="Journalism"
-          degreeDescription="Specialized in television. Member of the Board of Appeals and the Dispute Committee. Not finished."
+          degree="Bachelor's Degree, Journalism"
+          degreeDescription="Specialized in television. Member of the Board of Appeals and the Dispute Committee."
           yearStart={2013}
           yearEnd={2014}
         />
@@ -284,16 +284,16 @@
           schoolName="Grafisch Lyceum"
           schoolLocation="Utrecht, The Netherlands"
           schoolWebsite="http://glu.nl"
-          degree="Media Management"
-          degreeDescription="Followed the media intermediary specialization, accelerated course. Interned as an online marketeer at a book publisher and a technical producer for the online TV channel of a Dutch national newspaper."
+          degree="Mbo-4, Media Management"
+          degreeDescription="Specialized as a media intermediary, accelerated course. Interned as an online marketeer at a book publisher and a technical producer for the online TV channel of a Dutch national newspaper."
           yearStart={2010}
           yearEnd={2013}
         />
         <Education
           schoolName="'t Atrium"
           schoolLocation="Amersfoort, The Netherlands"
-          degree="MAVO"
-          degreeDescription="Economics and sports study program."
+          degree="MAVO, Economics"
+          degreeDescription="Followed the sports study program."
           yearStart={2005}
           yearEnd={2009}
         />
