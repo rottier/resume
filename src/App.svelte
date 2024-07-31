@@ -24,7 +24,7 @@
     <div class="space-y-8 m-8 max-w-prose print:max-w-full">
       <div class="space-y-2">
         <h1
-          class="pl-0 sm:pl-8 text-slate-800 font-mono uppercase font-extrabold text-3xl text-center sm:text-left"
+          class="pl-0 sm:pl-8 text-slate-800 font-mono uppercase font-extrabold text-4xl sm:text-3xl text-center sm:text-left"
         >
           Marino Rottier
         </h1>
@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-      <ExperienceSection sectionName="Skills">
+      <ExperienceSection sectionName="Competencies">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <Skills
             skillSetName="Development"

@@ -8,7 +8,7 @@
 </script>
 
 <section
-  class="space-y-2 pl-3 break-inside-avoid"
+  class="w-full space-y-2 pl-3 break-inside-avoid"
   use:inview
   on:inview_change={(event) => {
     const { inView } = event.detail;
@@ -21,9 +21,9 @@
       const { inView } = event.detail;
       isHeaderInView = inView;
     }}
-    class="text-slate-800 font-mono font-extrabold text-2xl pl-3 uppercase"
+    class="text-slate-800 font-mono font-extrabold text-3xl pl-0 sm:text-2xl sm:pl-3 uppercase text-center sm:text-left"
   >
-    {sectionName}
+    {` ${sectionName}`}
   </h2>
   <div class="flex flex-row">
     <div class="flex-none w-[calc(100%-1rem)] space-y-2">
