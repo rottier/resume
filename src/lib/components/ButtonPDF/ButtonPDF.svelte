@@ -1,19 +1,9 @@
 <script lang="ts">
   import { ArrowDownTray, Printer } from "@steeze-ui/heroicons";
   import { Icon } from "@steeze-ui/svelte-icon";
-  const pdfUrl = new URL("/cv.pdf?url", import.meta.url).href;
+  import { pdfUrl, printFile } from "../../helpers";
   export let print = false;
-
-  function printFile(fileName: string) {
-    const pdfWindow = window.open(fileName, "_blank");
-
-    if (pdfWindow) {
-      pdfWindow.addEventListener("load", () => {
-        pdfWindow.print();
-      });
-    }
-  }
-
+  
   function downloadFile(fileName: string) {
     const anchor = document.createElement("a");
     anchor.href = fileName;

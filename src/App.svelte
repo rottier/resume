@@ -14,6 +14,12 @@
   import Skills from "./lib/components/Experience/Skills/Skills.svelte";
   import IconBadge from "./lib/components/IconBadge/IconBadge.svelte";
   import ButtonPdf from "./lib/components/ButtonPDF/ButtonPDF.svelte";
+  import { pdfUrl, printFile } from "./lib/helpers";
+
+  window.onbeforeprint = (e) => {
+    printFile(pdfUrl);
+    e.preventDefault();
+  };
 </script>
 
 <main>
