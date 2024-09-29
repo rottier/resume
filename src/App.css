@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100svh;
+}
+
+body {
+  background-color: white !important;
+}
+
+@layer base {
+  html {
+     @apply 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl;
+  }
+}
+
+@media print {
+  body {
+    zoom: 1;
+  }
+
+  html {
+    background-color: white !important;
+  }
+}
